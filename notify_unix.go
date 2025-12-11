@@ -106,7 +106,6 @@ func notify1(title, message string, ico any, urgent bool) error {
 		if err != nil {
 			return err
 		}
-		defer conn.Close()
 
 		n := notify.Notification{
 			AppName:       AppName,
